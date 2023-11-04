@@ -1,7 +1,7 @@
 const AddNewTask = () => {
   return (
     <form className="add-form">
-      <div></div>
+      <div className="form-control"></div>
     </form>
   );
 };
