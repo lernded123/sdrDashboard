@@ -3,7 +3,7 @@ import React from "react";
 const AddNewTask = () => {
   return (
     <div className="popup">
-      <div>
+      <div className="popup-inner">
         <button className="close-btn"></button>
       </div>
     </div>
