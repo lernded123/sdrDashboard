@@ -4,7 +4,7 @@ const AddNewTask = () => {
   return (
     <div className="popup">
       <div>
-        <button></button>
+        <button className="close-btn"></button>
       </div>
     </div>
   );
