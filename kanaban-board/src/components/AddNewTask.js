@@ -2,7 +2,7 @@ import React from "react";
 
 const AddNewTask = () => {
   return (
-    <div>
+    <div className="popup">
       <div></div>
     </div>
   );
