@@ -1,24 +1,17 @@
-import logo from "./logo.svg";
-import "./App.css";
+import "./App.css"; //possibly delete
+import React from "react";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import AddNewColumn from "./components/AddNewColumn";
+import AddNewTask from "./components/AddNewTask";
+import Header from "./components/Header";
+import SideBar from "./components/SideBar";
+import AddNewSubTask from "./components/AddNewSubTask";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+    </Router>
   );
 }
 
