@@ -27,4 +27,6 @@ async function markComplete() {
   }
 }
 
-async function markIncomplete() {}
+async function markIncomplete() {
+  const todoId = this.parentNode.dataset.id;
+}
