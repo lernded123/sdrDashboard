@@ -26,3 +26,5 @@ async function markComplete() {
     console.log(err);
   }
 }
+
+async function markIncomplete() {}
