@@ -1,11 +1,13 @@
 const todoItem = document.querySelectorAll("span.not");
-const todoComplete = document.querySelectorAll("span.completed");
+const done = document.querySelectorAll("span.completed");
+const doing = document.querySelectorAll("span.not");
+const addNewTask = document.querySelectorAll();
 
 Array.from(todoItem).forEach((elem) => {
   elem.addEventListener("click", markComplete);
 });
 
-Array.from(todoComplete).forEach((elem) => {
+Array.from(done).forEach((elem) => {
   elem.addEventListener("click", markIncomplete);
 });
 
