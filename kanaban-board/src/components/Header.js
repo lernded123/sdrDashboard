@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { useLocation } from "react-router-dom";
+
 // import Button from
 
 const Header = ({ title }) => {
@@ -15,7 +16,7 @@ const Header = ({ title }) => {
           </div>
         </div>
         <div>
-          <button className="btn">+Add column here</button>
+          <button className="btn">+Add New Task</button>
         </div>
       </div>
     </header>
