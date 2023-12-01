@@ -10,7 +10,9 @@ const App = () => {
     <Router>
       <div className="container">
         <Header />
-        <AddNewTask />
+        <AddNewTask>
+          <h3>Add New Task</h3>
+        </AddNewTask>
       </div>
       <div className="containerCreate">
         <AllBoards />

@@ -12,3 +12,5 @@ const AddNewTask = (props) => {
     ""
   );
 };
+
+export default AddNewTask;
