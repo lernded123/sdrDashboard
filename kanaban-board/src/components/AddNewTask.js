@@ -1,5 +1,5 @@
 const AddNewTask = () => {
-  return <form></form>;
+  return <form className="add-form"></form>;
 };
 
 export default AddNewTask;
