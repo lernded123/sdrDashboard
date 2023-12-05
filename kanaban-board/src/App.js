@@ -10,12 +10,12 @@ const App = () => {
     <Router>
       <div className="container">
         <Header />
-        <AddNewTask>
-          <h3>Add New Task</h3>
-        </AddNewTask>
       </div>
-      <div className="containerCreate">
+      <div>
         <AllBoards />
+      </div>
+      <div>
+        <AddNewTask />
       </div>
       <Routes>
         <Route></Route>

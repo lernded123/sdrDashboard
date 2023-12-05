@@ -23,7 +23,13 @@ const todo = [
 ];
 
 const AddNewTask = () => {
-  return <div></div>;
+  return (
+    <>
+      {todo.map((task) => (
+        <h3>{task.text}</h3>
+      ))}
+    </>
+  );
 };
 
 export default AddNewTask;
