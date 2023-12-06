@@ -59,3 +59,9 @@ body {
   padding: 10px 20px;
   cursor: pointer;
 }
+
+/* TodoForm CSS */
+
+.add-form {
+  margin-bottom: 40px;
+}
