@@ -13,7 +13,7 @@ const Button = ({ color, text, onClick }) => {
 };
 
 Button.defaultProps = {
-  color: "purple",
+  color: "black",
 };
 
 Button.propTypes = {
