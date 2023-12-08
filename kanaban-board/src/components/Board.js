@@ -1,10 +1,13 @@
 import Column from "./Column";
 
 const Board = () => {
-  return;
-  <div>
-    <Column />
-  </div>;
+  return (
+    <div>
+      <div>
+        <Column />
+      </div>
+    </div>
+  );
 };
 
 export default Board;
