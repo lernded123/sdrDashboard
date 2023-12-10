@@ -1,5 +1,6 @@
-import NewTodoAdded from "./NewTodos";
+import NewTodo from "./NewTodos";
 import { useState } from "react";
+import NewDoing from "./NewDoing";
 
 const Column = () => {
   const [todo, setTodos] = useState([
@@ -29,9 +30,40 @@ const Column = () => {
     },
   ]);
 
+  const [doing, setDoing] = useState([
+    {
+      ListType: "Doing",
+      id: 5,
+      Todo: "Build UI",
+      Description: "Build a UI to do something",
+      Subtasks: "Add UI",
+      Subtasks1: "Add UI 2",
+    },
+    {
+      ListType: "Doing",
+      id: 7,
+      Todo: "Web design",
+      Description: "Design web",
+      Subtasks: "Add front",
+      Subtasks1: "Add back",
+    },
+    {
+      ListType: "Doing",
+      id: 6,
+      Todo: "Murder Crows",
+      Description: "Murder some crows",
+      Subtasks: "kills crows",
+      Subtasks1: "silence dead crows",
+    },
+  ]);
+
   // Delete Task
   const deleteTodo = (id) => {
-    console.log("delete", id);
+    setTodos(todo.filter((todo) => todo.id !== id));
+  };
+
+  const deleteDoing = (id) => {
+    setDoing(doing.filter((doing) => doing.id !== id));
   };
 
   return (
@@ -41,7 +73,7 @@ const Column = () => {
           <h1>Todo</h1>
         </div>
         <div>
-          <NewTodoAdded todo={todo} onDelete={deleteTodo} />
+          <NewTodo todo={todo} onDelete={deleteTodo} />
         </div>
       </section>
       <section className="containerColumn">
@@ -49,7 +81,7 @@ const Column = () => {
           <h1>Doing</h1>
         </div>
         <div>
-          <NewTodoAdded todo={todo} />
+          <NewTodo todo={todo} onDelete={deleteTodo} />
         </div>
       </section>
       <section className="containerColumn">
@@ -57,7 +89,7 @@ const Column = () => {
           <h1>Done</h1>
         </div>
         <div>
-          <NewTodoAdded todo={todo} />
+          <NewTodo todo={todo} />
         </div>
       </section>
     </section>
