@@ -36,3 +36,26 @@
 body {
   background-color: gray;
 }
+
+/* Column CSS */
+
+.containerColumn {
+  display: flex;
+  flex-direction: column;
+
+  margin: 20px;
+  padding: 20px;
+}
+
+.containerMultiple {
+  display: flex;
+  flex-direction: row;
+}
+
+/* todo styles */
+.todo {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}

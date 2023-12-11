@@ -1,8 +1,15 @@
-const NewTodo = ({ todo }) => {
+import { FaTimes } from "react-icons/fa";
+
+const NewTodo = ({ todo, onDelete }) => {
   return (
-    <div className="task">
-      <h2>{todo}</h2>
-      <h3>{todo.Todo}</h3>
+    <div className="todo">
+      <h3>
+        {todo.Todo}
+        <FaTimes
+          style={{ color: "red", cursor: "pointer" }}
+          onClick={() => onDelete(todo.id)}
+        />
+      </h3>
       <p>{todo.Subtasks}</p>
     </div>
   );

@@ -3,12 +3,16 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import React from "react";
 import Header from "./components/Header";
-import AllBoards from "./components/AllBoards";
-import NewTodoAdded from "./components/NewTodoAdded";
+import NewTodoAdded from "./components/NewTodos";
 import Board from "./components/Board";
 import "./index.css";
 
 const App = () => {
+  // // Delete Task
+  // const deleteTask = (id) => {
+  //   console.log("delete", id);
+  // };
+
   return (
     <Router>
       <Header />

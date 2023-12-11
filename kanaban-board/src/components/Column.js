@@ -1,10 +1,10 @@
-import NewTodoAdded from "./NewTodoAdded";
+import NewTodoAdded from "./NewTodos";
 import { useState } from "react";
 
 const Column = () => {
   const [todo, setTodos] = useState([
     {
-      listType: "Todo",
+      ListType: "Todo",
       id: 1,
       Todo: "Build UI",
       Description: "Build a UI to do something",
@@ -12,7 +12,7 @@ const Column = () => {
       Subtasks1: "Add UI 2",
     },
     {
-      listType: "Todo",
+      ListType: "Todo",
       id: 2,
       Todo: "Web design",
       Description: "Design web",
@@ -20,7 +20,7 @@ const Column = () => {
       Subtasks1: "Add back",
     },
     {
-      listType: "Todo",
+      ListType: "Todo",
       id: 3,
       Todo: "Murder Crows",
       Description: "Murder some crows",
@@ -29,10 +29,38 @@ const Column = () => {
     },
   ]);
 
+  // Delete Task
+  const deleteTodo = (id) => {
+    console.log("delete", id);
+  };
+
   return (
-    <div>
-      <NewTodoAdded todo={todo} />
-    </div>
+    <section className="containerMultiple">
+      <section className="containerColumn">
+        <div>
+          <h1>Todo</h1>
+        </div>
+        <div>
+          <NewTodoAdded todo={todo} onDelete={deleteTodo} />
+        </div>
+      </section>
+      <section className="containerColumn">
+        <div>
+          <h1>Doing</h1>
+        </div>
+        <div>
+          <NewTodoAdded todo={todo} />
+        </div>
+      </section>
+      <section className="containerColumn">
+        <div>
+          <h1>Done</h1>
+        </div>
+        <div>
+          <NewTodoAdded todo={todo} />
+        </div>
+      </section>
+    </section>
   );
 };
 
