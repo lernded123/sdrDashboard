@@ -1,0 +1,22 @@
+/* styles.css */
+.ps-sidebar-root {
+  position: sticky !important;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border: 0 !important;
+}
+
+.ps-menu-root {
+  color: red !important;
+}
+
+.ps-menu-button:hover {
+  background-color: red !important;
+  color: black !important;
+}
+
+.ps-submenu-content {
+  color: black !important;
+  background-color: red !important;
+}
