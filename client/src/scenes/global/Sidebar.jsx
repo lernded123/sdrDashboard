@@ -127,29 +127,52 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
 
+            <Item
+              title="Monthly Dashboard"
+              to="/"
+              icon={<HomeOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
             <Typography
               variant="h6"
               color={colors.grey[300]}
               sx={{ m: "15px 0 5px 20px" }}
             >
-              Data
+              Analytics
             </Typography>
             <Item
-              title="Manage Team"
+              title="Net new leads"
               to="/team"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Contacts Information"
+              title="Emails out"
               to="/contacts"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Invoices Balances"
+              title="Calls"
+              to="/invoices"
+              icon={<ReceiptOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Set Calls"
+              to="/invoices"
+              icon={<ReceiptOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+
+            <Item
+              title="QDC"
               to="/invoices"
               icon={<ReceiptOutlinedIcon />}
               selected={selected}
@@ -167,6 +190,13 @@ const Sidebar = () => {
               title="Profile Form"
               to="/form"
               icon={<PersonOutlinedIcon />}
+              selected={selected}
+              setSelected={setSelected}
+            />
+            <Item
+              title="Kanban Board"
+              to="/calendar"
+              icon={<CalendarTodayOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
