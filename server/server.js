@@ -7,14 +7,14 @@ import helmet from "helmet";
 import morgan from "morgan";
 
 // Routes that you will change
-import clientRoutes from "./routes/client.js";
-import generalRoutes from "./routes/client.js";
-import managementRoutes from "./routes/client.js";
-import salesRoutes from "./routes/client.js";
+import dataRoutes from "./routes/data.js";
+import generalRoutes from "./routes/general.js";
+import managementRoutes from "./routes/management.js";
+import salesRoutes from "./routes/sales.js";
 
 //data imports
 import User from "./models/User.js";
-import { dataUser } from "./data/mockData.js";
+// import { dataUser } from "./data/mockData.js";
 
 // Configuration
 dotenv.config();
@@ -29,7 +29,7 @@ app.use(cors());
 
 // ROUTES
 // Each route is set to a different section
-app.use("/client", clientRoutes);
+app.use("/data", dataRoutes);
 app.use("/general", generalRoutes);
 app.use("/management", managementRoutes);
 app.use("/sales", salesRoutes);
@@ -45,6 +45,6 @@ mongoose
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
     // ONLY ADD DATA ONE TIME
-    User.insertMany(dataUser);
+    // User.insertMany(dataUser);
   })
   .catch((error) => console.log(`${error} did not connect`));
