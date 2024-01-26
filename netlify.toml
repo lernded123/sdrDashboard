@@ -1,0 +1,18 @@
+# netlify.toml
+
+[build]
+  # Specify the directory where your client-side code is located
+  publish = "public" # adjust if your directory is different
+
+[[redirects]]
+  # Redirect all requests to the root (except the API) to the client-side code
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  # Allow requests to the server-side API
+  from = "/api/*"
+  to = "YOUR_SERVER_URL/:splat" # Replace YOUR_SERVER_URL with the actual URL of your server
+  status = 200
+  force = true
