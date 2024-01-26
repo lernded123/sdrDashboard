@@ -1,8 +1,9 @@
 # netlify.toml
 
 [build]
-  # Specify the directory where your client-side code is located
-  publish = "public" # adjust if your directory is different
+  command = "npm run build"  # Adjust according to your client-side build script
+  publish = "client/public"  # Adjust according to your client-side build output directory
+
 
 [[redirects]]
   # Redirect all requests to the root (except the API) to the client-side code
