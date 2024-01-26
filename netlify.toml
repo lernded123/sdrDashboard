@@ -14,6 +14,6 @@
 [[redirects]]
   # Allow requests to the server-side API
   from = "/api/*"
-  to = "YOUR_SERVER_URL/:splat" # Replace YOUR_SERVER_URL with the actual URL of your server
+  to = "localhost:5001" # Replace YOUR_SERVER_URL with the actual URL of your server
   status = 200
   force = true
