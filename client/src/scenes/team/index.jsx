@@ -37,35 +37,35 @@ const Team = () => {
       headerName: "Email",
       flex: 1,
     },
-    {
-      field: "access",
-      headerName: "Access Level",
-      flex: 1,
-      renderCell: ({ row: { access } }) => {
-        return (
-          <Box
-            width="60%"
-            m="0 auto"
-            p="5px"
-            display="flex"
-            justifyContent="center"
-            backgroundColor={
-              access === "admin"
-                ? colors.greenAccent[600]
-                : colors.greenAccent[700]
-            }
-            borderradius="4px"
-          >
-            {access === "admin" && <AdminPanelSettingsOutlinedIcon />}
-            {access === "manager" && <SecurityOutlinedIcon />}
-            {access === "user" && <LockOpenOutlinedIcon />}
-            <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
-              {access}
-            </Typography>
-          </Box>
-        );
-      },
-    },
+    // {
+    //   field: "access",
+    //   headerName: "Access Level",
+    //   flex: 1,
+    //   renderCell: ({ row: { access } }) => {
+    //     return (
+    //       <Box
+    //         width="60%"
+    //         m="0 auto"
+    //         p="5px"
+    //         display="flex"
+    //         justifyContent="center"
+    //         backgroundColor={
+    //           access === "admin"
+    //             ? colors.greenAccent[600]
+    //             : colors.greenAccent[700]
+    //         }
+    //         borderradius="4px"
+    //       >
+    //         {access === "admin" && <AdminPanelSettingsOutlinedIcon />}
+    //         {access === "manager" && <SecurityOutlinedIcon />}
+    //         {access === "user" && <LockOpenOutlinedIcon />}
+    //         <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
+    //           {access}
+    //         </Typography>
+    //       </Box>
+    //     );
+    //   },
+    // },
   ];
 
   return (

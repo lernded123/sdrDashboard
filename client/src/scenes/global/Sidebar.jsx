@@ -127,13 +127,13 @@ const Sidebar = () => {
               setSelected={setSelected}
             />
 
-            <Item
+            {/*<Item
               title="Monthly Dashboard"
               to="/"
               icon={<HomeOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+          />*/}
 
             <Typography
               variant="h6"
@@ -143,41 +143,41 @@ const Sidebar = () => {
               Analytics
             </Typography>
             <Item
-              title="Net new leads"
+              title="Customers"
               to="/team"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
-              title="Emails out"
+              title="Companies"
               to="/contacts"
               icon={<ContactsOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
-              title="Calls"
-              to="/invoices"
-              icon={<ReceiptOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
-            <Item
-              title="Set Calls"
-              to="/invoices"
-              icon={<ReceiptOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+            {/* <Item
+            //   title="Calls"
+            //   to="/invoices"
+            //   icon={<ReceiptOutlinedIcon />}
+            //   selected={selected}
+            //   setSelected={setSelected}
+            // />
+            // <Item
+            //   title="Set Calls"
+            //   to="/invoices"
+            //   icon={<ReceiptOutlinedIcon />}
+            //   selected={selected}
+            //   setSelected={setSelected}
+            // />
 
-            <Item
-              title="QDC"
-              to="/invoices"
-              icon={<ReceiptOutlinedIcon />}
-              selected={selected}
-              setSelected={setSelected}
-            />
+            // <Item
+            //   title="QDC"
+            //   to="/invoices"
+            //   icon={<ReceiptOutlinedIcon />}
+            //   selected={selected}
+            //   setSelected={setSelected}
+          // />*/}
 
             <Typography
               variant="h6"
@@ -193,13 +193,13 @@ const Sidebar = () => {
               selected={selected}
               setSelected={setSelected}
             />
-            <Item
+            {/*}<Item
               title="Kanban Board"
               to="/calendar"
               icon={<CalendarTodayOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
-            />
+            />*/}
             <Item
               title="Calendar"
               to="/calendar"
