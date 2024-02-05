@@ -1,3 +1,4 @@
+import React from "react";
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
@@ -17,6 +18,14 @@ import NotFound from "./components/NotFound";
 // import Calendar from "./scenes/calendar";
 
 function App() {
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []);
+
   const [theme, colorMode] = useMode();
 
   return (
