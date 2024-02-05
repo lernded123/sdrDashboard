@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 import helmet from "helmet";
 import morgan from "morgan";
 import router from "./routes/router.js";
+const data = require("./data/mockData.js");
 
 // Routes that you will change
 // import dataRoutes from "./routes/data.js";
@@ -59,4 +60,15 @@ app.use("/", router);
 //serve static files
 app.get("/api", (req, res) => {
   res.json({ message: "Hello from server!" });
+});
+
+app.get("/mockData.js", async (req, res) => {
+  console.log("/mockData");
+  try {
+    console.log("data sent");
+    res.send(data);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send("error see server logs");
+  }
 });
