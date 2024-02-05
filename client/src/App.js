@@ -20,6 +20,8 @@ import NotFound from "./components/NotFound";
 function App() {
   const [data, setData] = React.useState(null);
 
+  const reactBackendUrl = "https://sdrdashbackend.onrender.com";
+
   React.useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
